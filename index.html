@@ -69,8 +69,17 @@
 	<h1 id="c">Fajny</h1>
 	<h1 id="r">Rafał</h1>
 	<button style="font-size: 20px" id="but" onclick="zmiana()">Zmień napis!</button>
-	<a href="penys.jpg" download
-		style="display:inline-block; padding:10px 20px; background:#5ed1c9; color:black; 
-          	border:2px solid black; border-radius:10px; text-decoration:none; cursor:pointer;">Pobierz chuja.</a>
+	<button onclick="pobierz()">Pobierz obrazek</button>
+
+	<script>
+		function pobierz() {
+  			const link = document.createElement("a");
+  			link.href = "penys.jpg";     // plik obok index.html
+  			link.download = "mojObrazek.jpg"; // nazwa do zapisania
+  			document.body.appendChild(link);
+  			link.click();
+  			document.body.removeChild(link);
+		}
+	</script>
 </body>
 </html>
