@@ -9,13 +9,15 @@
 			margin: 0;
 			text-align: center;
 		}
-		#but {
+		.but {
 			background: #5ed1c9;
 			border-radius: 15px;
 			border: solid black 2px;
 			cursor: pointer;
+			margin: 10px;
+			padding: 4px;
 		}
-		#but:hover {
+		.but:hover {
 			background: #b5e8db;
 		}
 		#pas {
@@ -30,56 +32,256 @@
 			cursor: pointer;
 			background: #5ed1c9;
 			border: solid black 2px;
+			font-size: 20px;
+			margin: 4px;
 		}
 		#list:hover {
 			background: #b5e8db;
 		}
+		#nr {
+			border-radius: 8px;
+			cursor: pointer;
+			background: #5ed1c9;
+			border: solid black 2px;
+			margin: 10px;
+			font-size: 20px;
+		}
+		#nr:hover {
+			background: #b5e8db;
+		}
+
   	</style>
 	<script>
-		let c = "Fajny";
-		let r = "Kuba";
+	let c = "Ciul";
+	let r = "1. Igor Błażkiewicz";
 	function zmiana() {
-			document.getElementById("c").textContent = c;
-			document.getElementById("r").textContent = r;
+		if (c == "Ciul" && r === "1. Igor Błażkiewicz") {
+			c = "Ciulka";
+			r = "2. Ala Curyło";
 
-			if (c == "Fajny" && r === "Rafał") {
-				c = "Fajny";
-				r = "Kuba";
-			} else if (c == "Fajny" && r === "Kuba") {
-				c = "Fajny";
-				r = "Rafał";
-		}	
+		} else if (c == "Ciulka" && r === "2. Ala Curyło") {
+			c = "Ciulka";
+			r = "3. Michalina Duch";
+
+		} else if (c == "Ciulka" && r === "3. Michalina Duch") {
+			c = "Ciul";
+			r = "4. Adrian Góral";
+
+		} else if (c == "Ciul" && r === "4. Adrian Góral") {
+			c = "Ciul";
+			r = "5. Kuba Gawryś";
+
+		} else if (c == "Ciul" && r === "5. Kuba Gawryś") {
+			c = "Ciulka";
+			r = "6. Masza Horodetska";
+
+		} else if (c == "Ciulka" && r === "6. Masza Horodetska") {
+			c = "Ciul";
+			r = "7. Miłosz Kuras";
+
+		} else if (c == "Ciul" && r === "7. Miłosz Kuras") {
+			c = "Ciulka";
+			r = "8. Julka Machowska";
+
+		} else if (c == "Ciulka" && r === "8. Julka Machowska") {
+			c = "Ciulka";
+			r = "9. Ada Marzec";
+
+		} else if (c == "Ciulka" && r === "9. Ada Marzec") {
+			c = "Ciul";
+			r = "10. Bartek Mietła";
+
+		} else if (c == "Ciul" && r === "10. Bartek Mietła") {
+			c = "Ciulka";
+			r = "11. Paulina Migdał";
+
+		} else if (c == "Ciulka" && r === "11. Paulina Migdał") {
+			c = "Ciul";
+			r = "12. Krzysiek Mleczko";
+
+		} else if (c == "Ciul" && r === "12. Krzysiek Mleczko") {
+			c = "Ciul";
+			r = "13. Seweryn Młynarczyk";
+
+		} else if (c == "Ciul" && r === "13. Seweryn Młynarczyk") {
+			c = "Ciul";
+			r = "14. Bartek Nosal";
+
+		} else if (c == "Ciul" && r === "14. Bartek Nosal") {
+			c = "Ciul";
+			r = "15. Kuba Opioła (ja ciule)";
+
+		} else if (c == "Ciul" && r === "15. Kuba Opioła (ja ciule)") {
+			c = "Ciul";
+			r = "16. Kacper Oszczypała";
+
+		} else if (c == "Ciul" && r === "16. Kacper Oszczypała") {
+			c = "Ciulka";
+			r = "17. Daria Sarlej";
+
+		} else if (c == "Ciulka" && r === "17. Daria Sarlej") {
+			c = "Ciulka";
+			r = "18. Karolina Smoleń";
+
+		} else if (c == "Ciulka" && r === "18. Karolina Smoleń") {
+			c = "Ciul";
+			r = "19. Wojtek Suchodolski";
+
+		} else if (c == "Ciul" && r === "19. Wojtek Suchodolski") {
+			c = "Ciul";
+			r = "1. Igor Błażkiewicz";
+
+		} 
+		document.getElementById("c").textContent = c;
+		document.getElementById("r").textContent = r;
+
 	}
 	function zmianakoler() {
 		let sel = document.getElementById("list");
 		let koler = sel.value;
 		document.body.style.backgroundColor = koler;
 	}
+	function zmiananr() {
+		let sel2 = document.getElementById("nr");
+		let nr = sel2.value;
+		if (nr == "IB") {
+			c = "Ciul";
+			r = "1. Igor Błażkiewicz";
+
+		} else if (nr == "AC") {
+			c = "Ciulka";
+			r = "2. Ala Curyło"
+
+		} else if (nr == "MD") {
+			c = "Ciulka";
+			r = "3. Michalina Duch"
+
+		} else if (nr == "AG") {
+			c = "Ciul";
+			r = "4. Adrian Góral"
+
+		} else if (nr == "KG") {
+			c = "Ciul";
+			r = "5. Kuba Gawryś"
+
+		} else if (nr == "MH") {
+			c = "Ciulka";
+			r = "6. Masza Horodetska"
+
+		} else if (nr == "MK") {
+			c = "Ciul";
+			r = "7. Miłosz Kuras"
+
+		} else if (nr == "JM") {
+			c = "Ciulka";
+			r = "8. Julka Machowska"
+
+		} else if (nr == "AM") {
+			c = "Ciulka";
+			r = "9. Ada Marzec"
+
+		} else if (nr == "BM") {
+			c = "Ciul";
+			r = "10. Bartek Mietła"
+
+		} else if (nr == "PM") {
+			c = "Ciulka";
+			r = "11. Paulina Migdał"
+
+		} else if (nr == "KM") {
+			c = "Ciul";
+			r = "12. Krzysiek Mleczko"
+
+		} else if (nr == "SM") {
+			c = "Ciul";
+			r = "13. Seweryn Młynarczyk"
+
+		} else if (nr == "BN") {
+			c = "Ciul";
+			r = "14. Bartek Nosal"
+
+		} else if (nr == "KO") {
+			c = "Ciul";
+			r = "15. Kuba Opioła (ja ciule)"
+
+		} else if (nr == "ko") {
+			c = "Ciul";
+			r = "16. Kacper Oszczypała"
+
+		} else if (nr == "DS") {
+			c = "Ciulka";
+			r = "17. Daria Sarlej "
+
+		} else if (nr == "KS") {
+			c = "Ciulka";
+			r = "18. Karolina Smoleń"
+
+		} else if (nr == "WS") {
+			c = "Ciul";
+			r = "19. Wojtek Suchodolski"
+
+		}
+
+
+
+
+		document.getElementById("c").textContent = c;
+		document.getElementById("r").textContent = r;
+
+	}
 	</script>
 </head>
 <body>
 	<header id="pas">
-		<h2>Zmień kolor tła!</h2>
+		<h2 style="margin:0">Zmień kolor tła!</h2>
 		<select id="list" onchange="zmianakoler()">
 			<option value="white">Biały (domyślny)</option>
 			<option value="red">Czerwony</option>
 			<option value="blue">Niebieski</option>
 		</select>
 	</header>
-	<h1 id="c">Fajny</h1>
-	<h1 id="r">Rafał</h1>
-	<button style="font-size: 20px" id="but" onclick="zmiana()">Zmień napis!</button>
-	<button onclick="pobierz()">Pobierz obrazek</button>
+	<h1 id="c">Ciul</h1>
+	<h1 id="r">1. Igor Błażkiewicz</h1>
+	<button style="font-size: 20px" class="but" onclick="zmiana()">Nastempny ciul</button><br>
+	<a href="chujek.html" class="but" style="font-size:20px">Przenieś do chuja</a><br>
+	<select id="nr" onchange="zmiananr()">
+		<option value="IB">1. Igor Błażkiewicz</option>
 
-	<script>
-		function pobierz() {
-  			const link = document.createElement("a");
-  			link.href = "penys.jpg";     // plik obok index.html
-  			link.download = "mojObrazek.jpg"; // nazwa do zapisania
-  			document.body.appendChild(link);
-  			link.click();
-  			document.body.removeChild(link);
-		}
-	</script>
+		<option value="AC">2. Ala Curyło</option>
+
+		<option value="MD">3. Michalina Duch</option>
+
+		<option value="AG">4. Adrian Góral</option>
+
+		<option value="KG">5. Kuba Gawryś</option>
+
+		<option value="MH">6. Masza Horodecka</option>
+
+		<option value="MK">7. Miłosz Kuras</option>
+
+		<option value="JM">8. Julka Machowska</option>
+
+		<option value="AM">9. Ada Marzec</option>
+
+		<option value="BM">10. Bartek Mietła</option>
+
+		<option value="PM">11. Paulina Migdał</option>
+
+		<option value="KM">12. Krzysiek Mleczko</option>
+
+		<option value="SM">13. Seweryn Młynarczyk</option>
+
+		<option value="BN">14. Bartek Nosal</option>
+
+		<option value="KO">15. Kuba Opioła</option>
+
+		<option value="ko">16. Kacper Oszczypała</option>
+
+		<option value="DS">17. Daria Sarlej</option>
+
+		<option value="KS">18. Karolina Smoleń</option>
+
+		<option value="WS">19. Wojtek Suchodolski</option>
+	</select>
 </body>
 </html>
