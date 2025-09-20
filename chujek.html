@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Chuj</title>
+	<style>
+		body {
+			font-family: sans-serif;
+			margin: 0;
+			text-align: center;
+		}
+		#but {
+			background: #5ed1c9;
+			border-radius: 15px;
+			border: solid black 2px;
+			cursor: pointer;
+		}
+		#but:hover {
+			background: #b5e8db;
+		}
+		#pas {
+			background: #8c8c8c;
+		}
+		#pas h2 {
+			margin: 0;
+			padding: 10px;
+		}
+		#list {
+			border-radius: 8px;
+			cursor: pointer;
+			background: #5ed1c9;
+			border: solid black 2px;
+		}
+		#list:hover {
+			background: #b5e8db;
+		}
+  	</style>
+	<script>
+		function zmianakoler() {
+			let sel = document.getElementById("list");
+			let koler = sel.value;
+			document.body.style.backgroundColor = koler;
+		}
+	</script>
+</head>
+<body>
+	<header id="pas">
+		<h2>Zmień kolor tła!</h2>
+		<select id="list" onchange="zmianakoler()">
+			<option value="white">Biały (domyślny)</option>
+			<option value="red">Czerwony</option>
+			<option value="blue">Niebieski</option>
+		</select>
+	</header>
+	<img src="penys1.jpg" height="600" width="450" alt="Tu miał być chuj...">
+</body>
+</html>
